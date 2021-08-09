@@ -1,0 +1,780 @@
+* *,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html,
+body {
+	min-width: 960px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.kitchen {
+	/* display: none; */
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.kitchen__background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: url(./img/kitchen/backgr.png) 59.5% 0 / cover;
+	top: -100px;
+}
+
+.kitchen__logo {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	top: 1.9791%;
+}
+
+.kitchen__logo img {
+	position: relative;
+	width: 22.91666%;
+	height: 15.625%;
+}
+
+.kitchen__table {
+	position: absolute;
+	width: 100%;
+	height: 61%;
+	background: url(./img/kitchen/table/table.png) 0 0 / cover no-repeat;
+	bottom: 0;
+}
+
+.kitchen__forms img {
+	position: absolute;
+	width: 31.25%;
+	height: 9.895%;
+	left: 5.41%;
+	bottom: 42.60%;
+}
+
+.kitchen__plate img {
+	position: absolute;
+	height: 12.1875%;
+	width: 15.1041%;
+	right: 17%;
+	top: 46.25%;
+}
+
+.kitchen_cup img {
+	position: absolute;
+	height: 7.1875%;
+	width: 9.791%;
+	right: 18%;
+	bottom: 38.645%;
+}
+
+.kitchen__ice_cream img {
+	position: absolute;
+	height: 12.08333%;
+	width: 12.1875%;
+	left: 19%;
+	bottom: 22.5%;
+}
+
+.kitchen_roll img {
+	position: absolute;
+	height: 13.958333%;
+	width: 16.0416667%;
+	left: 19.7916%;
+	bottom: 14.0625%;
+}
+
+.kitchen__plate_1 img {
+	position: absolute;
+	height: 10.9375%;
+	width: 32.5%;
+	top: 52.08333%;
+	left: 33.854%;
+}
+
+.kitchen__plate_2 img {
+	position: absolute;
+	height: 8.958%;
+	width: 27.395%;
+	top: 36.6667%;
+	left: 17.6%;
+}
+
+.kitchen__plate_3 img {
+	position: absolute;
+	height: 8.958%;
+	width: 27.3958%;
+	top: 36.6667%;
+	right: 17.6%;
+}
+
+.kitchen__maindish_1 img {
+	position: absolute;
+	width: 27.5%;
+	height: 20.265%;
+	left: 36%;
+	top: 40.92%;
+	z-index: 5;
+}
+
+.kitchen__maindish_1_animation {
+	animation: openMaindish 0.3s linear forwards;
+}
+
+@keyframes openMaindish {
+	0% {
+		transform: rotate(0);
+		top: 40.92%;
+	}
+
+	100% {
+		transform: rotate(-20deg);
+		top: 23%;
+	}
+}
+
+.kitchen__maindish_2 img {
+	position: absolute;
+	width: 23.33333%;
+	height: 17.1875%;
+	left: 19.58%;
+	top: 27.395%;
+	z-index: 4;
+}
+
+.kitchen__maindish_2_animation {
+	animation: openMaindish2 0.3s linear forwards;
+}
+
+@keyframes openMaindish2 {
+	0% {
+		transform: rotate(0);
+		top: 27.395%;
+	}
+
+	100% {
+		transform: rotate(-20deg);
+		top: 11%;
+	}
+}
+
+.kitchen__maindish_3 img {
+	position: absolute;
+	width: 23.33333%;
+	height: 17.1875%;
+	right: 19.58%;
+	top: 27.395%;
+	z-index: 4;
+}
+
+.kitchen__maindish_3_animation {
+	animation: openMaindish3 0.3s linear forwards;
+}
+
+@keyframes openMaindish3 {
+	0% {
+		transform: rotate(0);
+		top: 27.395%;
+	}
+
+	100% {
+		transform: rotate(20deg);
+		top: 11%;
+	}
+}
+
+.blizy__character img {
+	position: absolute;
+	height: 61.25%;
+	width: 32.75%;
+	/* height: 600px;
+	width: 400px; */
+	right: 13.2291%;
+	z-index: 3;
+	bottom: -21.3541%;
+}
+
+.blizy__hand img {
+	position: absolute;
+	height: 33.2291%;
+	width: 30.75%;
+	left: 36.758333%;
+	bottom: 1.041666%;
+	z-index: 1;
+	animation: handChange 0.5s linear 1s infinite alternate-reverse;
+}
+
+.blizy {
+	width: 100%;
+	height: 100%;
+	animation: appears 0.1s ease 1s forwards;
+	position: absolute;
+	bottom: -400px;
+}
+
+.kitchen__win1_cake {
+	visibility: hidden;
+}
+
+.kitchen__win1_cake img {
+	position: absolute;
+	width: 20.3125%;
+	height: 14.1666%;
+	left: 40.1041%;
+	top: 45.1041%;
+}
+
+.kitchen__win2_pancake {
+	visibility: hidden;
+}
+
+.kitchen {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.kitchen__win2_pancake img {
+	position: absolute;
+	width: 22.708333%;
+	height: 11.45833%;
+	left: 40.1041%;
+	top: 49.0625%;
+}
+
+.kitchen__fail_leftovers {
+	visibility: hidden;
+}
+
+.kitchen__fail_leftovers img {
+	position: absolute;
+	width: 23.8541%;
+	height: 15.41666%;
+	left: 38.2291%;
+	top: 44.4791%;
+}
+
+.kitchen__win11_cake {
+	visibility: hidden;
+}
+.kitchen__win11_cake img {
+	position: absolute;
+	width: 18.3125%;
+	height: 11.1666%;
+	left: 22.2%;
+	top: 32%;
+	z-index: 2;
+}
+
+.kitchen__win22_pancake {
+	visibility: hidden;
+}
+
+.kitchen__win22_pancake img {
+	position: absolute;
+	width: 18.3125%;
+	height: 11.1666%;
+	left: 22.2%;
+	top: 33.3%;
+	z-index: 2;
+}
+
+.kitchen__fail1_leftovers {
+	visibility: hidden;
+}
+
+.kitchen__fail1_leftovers img {
+	position: absolute;
+	width: 17.3125%;
+	height: 11.1666%;
+	left: 23.2%;
+	top: 32%;
+	z-index: 2;
+}
+
+.kitchen__win14_cake {
+	visibility: hidden;
+}
+
+.kitchen__win14_cake img {
+	position: absolute;
+	width: 18.3125%;
+	height: 11.1666%;
+	right: 22.2%;
+	top: 32%;
+	z-index: 2;
+}
+
+.kitchen__win24_pancake {
+	visibility: hidden;
+}
+
+.kitchen__win24_pancake img {
+	position: absolute;
+	width: 18.3125%;
+	height: 11.1666%;
+	right: 22.2%;
+	top: 33.3%;
+	z-index: 2;
+}
+
+.kitchen__fail14_leftovers {
+	visibility: hidden;
+}
+
+.kitchen__fail14_leftovers img {
+	position: absolute;
+	width: 17.3125%;
+	height: 11.1666%;
+	right: 23.2%;
+	top: 32%;
+	z-index: 2;
+}
+
+@keyframes appears {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-400px);
+	}
+}
+
+@keyframes handChange {
+	0% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(4deg);
+	}
+}
+
+.kitchen__win {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	display: none;
+}
+
+.kitchen__win img {
+	width: 150%;
+	height: 150%;
+	top: -20%;
+	z-index: -33;
+	position: absolute;
+}
+
+.kitchen__fail {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	display: none;
+}
+
+.kitchen__fail img {
+	width: 150%;
+	height: 150%;
+	top: -20%;
+	z-index: -33;
+	position: absolute;
+}
+
+@media (max-width: 640px) {
+	.kitchen__logo img {
+		width: 34.6875%;
+	}
+	.kitchen__forms img {
+		width: 47.65625%;
+		left: -21.25%;
+	}
+	.kitchen__plate img {
+		width: 23.4375%;
+		right: -0.9375%;
+	}
+	.kitchen__plate_1 img {
+		width: 48.59375%;
+		left: 25.78125%;
+	}
+
+	.kitchen_cup img {
+		width: 15%;
+		right: 1.71875%;
+	}
+	.kitchen__ice_cream img {
+		width: 18.125%;
+		left: 4.6785%;
+	}
+	.kitchen_roll img {
+		width: 24.21875%;
+		left: 4.6875%;
+	}
+	.kitchen__plate_2 img {
+		width: 41.40625%;
+		left: 1.09375%;
+	}
+	.kitchen__plate_3 img {
+		width: 41.40625%;
+		right: 1.09375%;
+	}
+	.kitchen__maindish_1 img {
+		width: 40.9375%;
+		left: 29.6875%;
+	}
+	.kitchen__maindish_2 img {
+		width: 34.84375%;
+		left: 4.6875%;
+	}
+	.kitchen__maindish_3 img {
+		width: 34.84375%;
+		right: 4.6875%;
+	}
+
+	.blizy__character img {
+		width: 43.90625%;
+		right: -5.3125%;
+	}
+	.blizy__hand img {
+		width: 43.75%;
+		left: 36.46875%;
+	}
+	.kitchen__win1_cake img {
+		width: 30.46875%;
+		left: 35.15625%;
+	}
+	.kitchen__win2_pancake img {
+		width: 33.59375%;
+		left: 34.375%;
+	}
+	.kitchen__fail_leftovers img {
+		width: 35.9375%;
+		left: 32.34373%;
+	}
+
+	.kitchen__win11_cake img {
+		width: 25.9375%;
+		left: 9%;
+	}
+	.kitchen__win22_pancake img {
+		width: 27.9375%;
+		left: 8.5%;
+	}
+	.kitchen__fail1_leftovers img {
+		width: 29.9375%;
+		left: 7.5%;
+	}
+	.kitchen__win14_cake img {
+		width: 25.9375%;
+		right: 9%;
+	}
+	.kitchen__win24_pancake img {
+		width: 27.9375%;
+		right: 8.5%;
+	}
+	.kitchen__fail14_leftovers img {
+		width: 29.9375%;
+		right: 7.5%;
+	}
+	.kitchen__win {
+		width: 140%;
+		left: -25%;
+		top: -10%;
+	}
+
+	.kitchen__win {
+		width: 140%;
+		left: -25%;
+		top: -10%;
+	}
+
+	.kitchen__fail {
+		width: 140%;
+		left: -25%;
+		top: -10%;
+	}
+}
+
+.showElement {
+	animation: showing 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.7s forwards;
+}
+@keyframes showing {
+	0% {
+		width: 150%;
+		height: 150%;
+		z-index: -2;
+	}
+	100% {
+		width: 110%;
+		height: 110%;
+		z-index: 999;
+	}
+}
+
+.final-screen {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+
+.final-screen__background {
+	width: 100%;
+	height: 100%;
+	background: url(./img/final_screen/background/pick_saturation/bingochef_bgr.png) 51% 0/cover no-repeat,
+		url(./img/final_screen/background/pick_saturation/layer2.png) 25% 5% no-repeat;
+	position: absolute;
+}
+.final-screen__background img {
+	width: 110%;
+	left: -5.9%;
+	height: 100%;
+	position: absolute;
+}
+
+.final-screen__logo img {
+	position: absolute;
+	width: 30.3125%;
+	height: 20.2083333%;
+	right: 18.75%;
+	top: -120%;
+	animation: logoAppears 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s forwards;
+}
+
+@keyframes logoAppears {
+	0% {
+		top: -120%;
+	}
+
+	100% {
+		top: 5.520833%;
+	}
+}
+
+.charachters {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.charachters__candice img {
+	position: absolute;
+	height: 96.875%;
+	width: 42.291666%;
+	top: -120%;
+	left: 17.1875%;
+	animation: candiceAppears 0.3s linear 0.9s forwards;
+}
+
+.charachters__blizy img {
+	position: absolute;
+	transform: rotateY(180deg);
+	width: 43.3333%;
+	height: 65.729%;
+	right: 14.16666%;
+	top: -120%;
+	z-index: 1;
+	animation: blizyAppears 0.3s linear 0.92s forwards;
+}
+
+.final-screen__table img {
+	width: 100%;
+	height: 62.3%;
+	position: absolute;
+	bottom: -100%;
+	animation: tableAppears 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s forwards;
+}
+
+.final-screen__forms img {
+	width: 34.375%;
+	height: 10.5208333%;
+	position: absolute;
+	/* bottom: -2.08333%; */
+	bottom: -100%;
+	left: 2.5%;
+	animation: formAppears 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s forwards;
+}
+
+.final-screen__roll img {
+	height: 13.541%;
+	width: 16.666667%;
+	position: absolute;
+	bottom: -100%;
+	right: 3.33333%;
+	animation: rollAppears 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s forwards;
+}
+
+.final-screen__start-button img {
+	height: 17.1875%;
+	width: 58.33333%;
+	position: absolute;
+	bottom: -100%;
+	left: 21.3541667%;
+	z-index: 2;
+	animation: buttonAppears 0.3s linear 1.3s forwards, buttonScaling 0.6s linear infinite alternate-reverse;
+}
+
+.final-screen__restart-button img {
+	height: 8.3333%;
+	width: 8.3333%;
+	position: absolute;
+	right: -100%;
+	bottom: 3.6458333%;
+	z-index: 6;
+	animation: buttonRestartAppears 0.5s linear 1.7s forwards;
+}
+
+@keyframes buttonRestartAppears {
+	0% {
+		right: -100%;
+	}
+
+	100% {
+		right: 17.5%;
+	}
+}
+
+@keyframes buttonScaling {
+	0% {
+		transform: scale(0.94);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes buttonAppears {
+	0% {
+		bottom: -100%;
+	}
+
+	100% {
+		bottom: 10.4166667%;
+	}
+}
+
+@keyframes rollAppears {
+	0% {
+		bottom: -100%;
+	}
+
+	100% {
+		bottom: -1.0416667%;
+	}
+}
+
+@keyframes formAppears {
+	0% {
+		bottom: -100%;
+	}
+
+	100% {
+		bottom: -2.08333%;
+	}
+}
+
+@keyframes tableAppears {
+	0% {
+		bottom: -100%;
+	}
+
+	100% {
+		bottom: -51%;
+	}
+}
+
+@keyframes blizyAppears {
+	0% {
+		top: -120%;
+	}
+
+	100% {
+		top: 33.333333%;
+	}
+}
+
+@keyframes candiceAppears {
+	0% {
+		top: -120%;
+	}
+
+	100% {
+		top: 8.5416667%;
+	}
+}
+
+@media (max-width: 640px) {
+	.final-screen__logo img {
+		width: 43.75%;
+		right: 3.59375%;
+	}
+
+	.charachters__candice img {
+		width: 62.5%;
+		top: -120%;
+		left: 0.5208333%;
+	}
+	.charachters__blizy img {
+		width: 64.0625%;
+		right: -4.0625%;
+	}
+	.final-screen__roll img {
+		width: 24.21875%;
+		right: -20%;
+	}
+	.final-screen__forms img {
+		width: 51.5625%;
+		left: -21.875%;
+	}
+	.final-screen__start-button img {
+		width: 86.71875%;
+		left: 7.34375%;
+	}
+	.final-screen__restart-button img {
+		width: 12.5%;
+		right: -100%;
+		animation: buttonRestartAppears 0.5s linear 1.7s forwards;
+		z-index: 6;
+	}
+	@keyframes buttonRestartAppears {
+		0% {
+			right: -100%;
+		}
+
+		100% {
+			right: 1.25%;
+		}
+	}
+}
+
+.footer img {
+	width: 150%;
+	height: 13%;
+	left: -25%;
+	position: absolute;
+	bottom: -1.86%;
+	z-index: 5;
+}
