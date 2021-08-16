@@ -769,12 +769,3 @@ body {
 		}
 	}
 }
-
-.footer img {
-	width: 150%;
-	height: 13%;
-	left: -25%;
-	position: absolute;
-	bottom: -1.86%;
-	z-index: 5;
-}
